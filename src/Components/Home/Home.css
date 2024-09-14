@@ -1,0 +1,151 @@
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86.5vh;
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease;
+    padding: 15%;
+}
+
+.detaile_container {
+    text-align: left;
+    width: 70%;
+    transition: color 0.5s ease;
+}
+
+.detaile_container p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--p-color);
+    transition: color 0.5s ease;
+}
+
+.detaile_container h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: var(--name-text-color);
+    text-shadow: 0px 0px 15px var(--name-text-sh-color);
+    transition: color 0.5s ease;
+}
+
+.detaile_container .homp{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--p-color);
+}
+
+.detaile_container button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--button-text-color);
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.detaile_container button:hover{
+    background-color: var(--hover-color);
+    color: var(--button-hover-text-color);
+}
+
+.socials-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.profile-pic {
+    width: 320px;
+    height: 360px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 2px var(--pic-shadow-color); 
+    margin-right: 2rem;
+}
+
+@media (max-width: 750px) {
+    .profile_container {
+        margin-top: -30px;
+        flex-direction: column;
+        align-items: center;
+        height: 200%;
+    }
+
+    .detaile_container {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .detaile_container h1 {
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .detaile_container p {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .detaile_container .homp{
+        font-size: 1.3rem;
+    }
+
+    .detaile_container button {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .socials-container {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .icon {
+        width: 55px;
+        height: 35px;
+    }
+
+    .profile-pic {
+        margin-top: 45px;
+        margin-bottom: 35px;
+        width: 200px;
+        height:220px;
+        margin-right: 0;
+    }
+}
+
+.light-mode{
+    --name-text-color: rgb(0, 68, 255);
+    --name-text-sh-color: rgb(0, 174, 255);
+}
+
+.dark-mode{
+    --name-text-color: rgb(0, 225, 255);
+    --name-text-sh-color: rgb(0, 174, 255);
+}

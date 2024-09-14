@@ -1,0 +1,257 @@
+/* Container styles */
+.about-container {
+    padding: 20px 50px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease;
+    margin: 0px 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.detail-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.head-title {
+    text-align: center;
+}
+
+.head-title p {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--p-color);
+    margin-bottom: 5px;
+}
+
+.head-title h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--page-title-color);
+}
+
+.head-title .htp {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* Personal section styles */
+.personal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.personal-details-1, .personal-details-2 {
+    color: var(--p-color);
+    flex: 1;
+    margin-right: 20px;
+    background-color: var(--container-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px var(--bs-color);
+    box-sizing: border-box;
+}
+.personal-details-1{
+    max-width: 60%;
+}
+.personal-details-2{
+    max-width: 30%;
+}
+.personal-details-1 h4{
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--h4-color);
+}
+
+.personal-details-2 h2 {
+    font-size: 25px;
+    color: var(--h2-color);
+    margin-bottom: 10px;
+}
+
+.personal-details-2 h4{
+    font-size: 17px;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.personal-details-2 hr{
+    margin-bottom: 10px;
+    border: 1px solid var(--p-color);
+}
+
+
+/* Education section */
+.education-container {
+    flex: 1;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    max-width: 48%;
+}
+
+.education-container .bch1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: var(--h1-color);
+}
+
+.education-container hr{
+    margin-bottom: 25px;
+    border: 1px solid var(--hr-color);
+}
+
+.edu-cont {
+    margin: 10px;
+    background-color: var(--container-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px var(--bs-color);
+    text-align: left;
+}
+
+.edu-cont .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+}
+
+.edu-cont h1 {
+    font-size: 24px;
+    color: var(--h1-color);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title .eduh3 {
+    font-size: 24px;
+    color: var(--h3-color);
+    margin-bottom: 5px;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.edu-cont h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--h3-color);
+    margin-bottom: 5px;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.edu-cont p {
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--p-color);
+    margin-bottom: 5px;
+    margin-top: 0;
+    opacity: 1; 
+    visibility: visible;
+    transform: none;
+}
+
+/* Responsive design for max-width: 750px */
+@media (max-width: 750px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .detail-container, .education-container {
+        max-width: 100%; /* Full width for smaller screens */
+        margin-right: 0;
+    }
+
+    .education-container {
+        margin-bottom: 20px;
+        padding: 10px;
+        flex: 1.5;
+    }
+
+    .edu-cont {
+        margin: 20px 5px;
+        padding: 10px 15px;
+    }
+
+    .edu-cont *:not(h1):not(h3) {
+        display: none; 
+    }
+
+    .edu-cont .title h1 {
+        max-width: 100%;
+        font-size: 17px;
+        margin-bottom: 10px;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    .title .eduh3{
+        font-size: 20px;
+    }
+
+    .detail-container h1, .education-container h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .personal {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .personal-details-1, .personal-details-2 {
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .personal-details-1 h4{
+        font-size: 15px;
+    }
+
+    .personal-details-2 h2 {
+        font-size: 20px;
+    }
+
+    .head-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .head-title h1 {
+        font-size: 48px;
+        margin: 10px 5px;
+    }
+
+    .head-title p {
+        font-size: 20px;
+    }
+
+    .head-title .htp {
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+
