@@ -9,7 +9,7 @@ const Projects = () => {
       imgSrc: assets.RB,
       title: "RECIPE BOOK",
       githubLink: "https://github.com/Mallikarjunshawaldar/Recipe-Book/",
-      liveDemoLink: "https://mallikarjunshawaldar.github.io/",
+      liveDemoLink: "https://mallikarjunshawaldar.github.io",
     },
     {
       id: 2,
