@@ -1,34 +1,34 @@
-import React from 'react';
-import './Projects.css';
-import { assets } from '../../assets/assets';
+import React from "react";
+import "./Projects.css";
+import { assets } from "../../assets/assets";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
       imgSrc: assets.RB,
-      title: 'RECIPE BOOK',
-      githubLink: 'https://github.com/',
-      liveDemoLink: 'https://github.com/',
+      title: "RECIPE BOOK",
+      githubLink: "https://github.com/Mallikarjunshawaldar/Recipe-Book/",
+      liveDemoLink: "https://mallikarjunshawaldar.github.io//",
     },
     {
       id: 2,
       imgSrc: assets.MM,
-      title: 'MATCH MAREL',
-      githubLink: 'https://github.com/',
-      liveDemoLink: 'https://github.com/',
+      title: "MATCH MAREL",
+      githubLink: "https://github.com/",
+      liveDemoLink: "https://github.com/",
     },
     {
       id: 3,
       imgSrc: assets.HHS,
-      title: 'HOUSE SERVICES',
-      githubLink: 'https://github.com/',
-      liveDemoLink: 'https://github.com/',
+      title: "HOUSE SERVICES",
+      githubLink: "https://github.com/",
+      liveDemoLink: "https://github.com/",
     },
   ];
 
   return (
-    <div className="project" id='project'>
+    <div className="project" id="project">
       <div className="project-container">
         <p className="pt-p">Browse My Recent</p>
         <h1 className="pt-h1">Projects</h1>
@@ -45,13 +45,15 @@ const Projects = () => {
                 <div className="btn-container">
                   <button
                     className="pt-btn"
-                    onClick={() => window.location.href = project.githubLink}
+                    onClick={() => (window.location.href = project.githubLink)}
                   >
                     Github
                   </button>
                   <button
                     className="pt-btn"
-                    onClick={() => window.location.href = project.liveDemoLink}
+                    onClick={() =>
+                      (window.location.href = project.liveDemoLink)
+                    }
                   >
                     Live Demo
                   </button>
